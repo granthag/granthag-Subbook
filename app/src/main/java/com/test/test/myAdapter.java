@@ -40,21 +40,21 @@ public class myAdapter extends ArrayAdapter<subscription> {
 
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.row_layout, null);
+        TextView price = v.findViewById(R.id.price);
         TextView title = v.findViewById(R.id.title);
         TextView date = v.findViewById(R.id.date);
-        TextView price = v.findViewById(R.id.price);
         title.setText(subList.get(position).getName());
         date.setText(subList.get(position).getDate());
         price.setText("$"+String.format("%.2f", subList.get(position).getCost()));
 
-        Button imageButton = v.findViewById(R.id.deleteButton);
+        Button deleteButton = v.findViewById(R.id.deleteButton);
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 subList.remove(position);
                 notifyDataSetChanged();
-                ((MainActivity) getContext()).updateTotal();
+                ((MainActivity) getContext()).updateSum();
             }
         });
 

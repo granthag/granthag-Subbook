@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
                 Float.parseFloat(price.getText().toString()), note.getText().toString()));
 
         adapter.notifyDataSetChanged();
-        updateTotal();
+        updateSum();
     }
 
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         temp.setComment(note.getText().toString());
 
         adapter.notifyDataSetChanged();
-        updateTotal();
+        updateSum();
     }
 
     /**
@@ -111,13 +111,13 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         loadFromFile();
         adapter = new myAdapter(this, R.layout.activity_main, subList);
         listView.setAdapter(adapter);
-        updateTotal();
+        updateSum();
     }
 
     /**
      * Updates the total price
      */
-    public void updateTotal(){
+    public void updateSum(){
         TextView total = findViewById(R.id.Sum);
         float sum = 0;
 
