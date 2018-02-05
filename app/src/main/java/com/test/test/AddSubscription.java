@@ -94,9 +94,10 @@ public class AddSubscription extends DialogFragment {
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText name = content.findViewById(R.id.name);
                 EditText date = content.findViewById(R.id.date);
                 EditText price = content.findViewById(R.id.price);
+                EditText name = content.findViewById(R.id.name);
+
 
                 if (name.getText().length() >= 1 && date.getText().length() == 10 && price.getText().length() >= 1){
                     listener.onDialogPositive(AddSubscription.this);
