@@ -18,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_date"
+        android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <EditText
@@ -35,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_price"
+        android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <EditText
@@ -51,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_note"
+        android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <EditText

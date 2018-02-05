@@ -12,4 +12,6 @@
     <string name="add_date">Date that subscription started</string>
     <string name="add_note">Any additional notes (Optional)</string>
     <string name="add_price">Monthly price of subscription</string>
+    <string name="how_to_edit">Click on item to edit</string>
+    <string name="title_add">Add Subscription</string>
 </resources>

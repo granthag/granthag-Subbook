@@ -35,13 +35,17 @@
 
     <Button
         android:id="@+id/deleteButton"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_dark"
         android:src="@android:drawable/ic_delete"
-        android:text="@string/delete_button" />
+        android:text="@string/delete_button"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp" />
 
 
 </RelativeLayout>

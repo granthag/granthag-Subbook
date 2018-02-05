@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,28 +22,19 @@ public class myAdapter extends ArrayAdapter<subscription> {
 
     private ArrayList<subscription> subList = new ArrayList<>();
 
-    /**
-     * Constructor for the adapter
-     *
-     * @param context main activity context
-     * @param textViewResourceID the resourece the adapter is handling
-     * @param objects the objects the adapter handles
-     */
-    public myAdapter(Context context, int textViewResourceID, ArrayList<subscription> objects){
-        super(context, textViewResourceID, objects);
-        subList = objects;
-    }
-
     @Override
     public int getCount(){
         return super.getCount();
     }
 
-    /**
-     * Creates the list view, sets all the values, and adds a listener to the delete button
-     *
-     * @return the view of the main screen
-     */
+    public myAdapter(Context context, int textViewResourceID, ArrayList<subscription> objects){
+        super(context, textViewResourceID, objects);
+        subList = objects;
+    }
+
+
+
+
     @Override
     public View getView(final int position, View convertView, ViewGroup parent){
 
