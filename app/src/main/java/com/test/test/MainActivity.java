@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
 
 
     @Override
-    public void onEditPositive(DialogFragment dialogFragment, int pos){
-        subscription temp = subList.get(pos);
+    public void onEditPositive(DialogFragment dialogFragment, int position){
+        subscription temp = subList.get(position);
         EditText name = dialogFragment.getDialog().findViewById(R.id.subName);
         EditText data = dialogFragment.getDialog().findViewById(R.id.subDate);
         EditText price = dialogFragment.getDialog().findViewById(R.id.subPrice);
@@ -100,9 +100,7 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         updateSum();
     }
 
-    /**
-     * Initializes the adpater, view, and total
-     */
+
     @Override
     public void onStart(){
         super.onStart();
@@ -114,9 +112,6 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         updateSum();
     }
 
-    /**
-     * Updates the total price
-     */
     public void updateSum(){
         TextView total = findViewById(R.id.Sum);
         float sum = 0;
@@ -129,9 +124,7 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         saveInFile();
     }
 
-    /**
-     * Loads the saved subList from file
-     */
+
     private void loadFromFile(){
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -145,9 +138,7 @@ public class MainActivity extends AppCompatActivity implements AddSubscription.A
         }
     }
 
-    /**
-     * Saves the subList array
-     */
+
     private void saveInFile(){
         try {
             FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);

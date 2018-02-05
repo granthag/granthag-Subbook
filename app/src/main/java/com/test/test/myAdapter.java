@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Custom array adapter for subList
- */
+
 
 public class myAdapter extends ArrayAdapter<subscription> {
 

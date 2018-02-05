@@ -42,7 +42,7 @@ public class AddSubscription extends DialogFragment {
         LayoutInflater layoutInflater = getActivity().getLayoutInflater();
         final View content = layoutInflater.inflate(R.layout.add_subscription, null);
 
-        // Sets dialog buttons and content
+
         builder.setCancelable(true).setView(content)
                 .setPositiveButton(R.string.add_subscription, new DialogInterface.OnClickListener() {
                     @Override
@@ -56,7 +56,7 @@ public class AddSubscription extends DialogFragment {
             }
         });
 
-        // Text watcher for date
+
         final EditText editText = content.findViewById(R.id.date);
 
         editText.addTextChangedListener(new TextWatcher() {
