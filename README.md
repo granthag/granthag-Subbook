@@ -14,3 +14,5 @@ https://stackoverflow.com/questions/37048731/gson-library-in-android-studio
 https://developer.android.com/reference/android/support/design/widget/FloatingActionButton.html
 https://developer.android.com/guide/components/fragments.html
 https://developer.android.com/reference/android/widget/Toast.html
+https://stackoverflow.com/questions/907360/explanation-of-classcastexception-in-java
+https://developer.android.com/reference/android/text/Editable.html
