@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">granthag-SubBook</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="add_subscription">Add</string>
+    <string name="sub_name">Name</string>
+    <string name="sub_date">Date (yyyy-mm-dd)</string>
+    <string name="sub_charge">Monthly Price</string>
+    <string name="sub_note">Note (optional)</string>
+    <string name="edit_subscription">Edit</string>
+    <string name="delete_button">Delete</string>
+    <string name="Add_name">Name of subscription</string>
+    <string name="add_date">Date that subscription started</string>
+    <string name="add_note">Any additional notes (Optional)</string>
+    <string name="add_price">Monthly price of subscription</string>
+</resources>
